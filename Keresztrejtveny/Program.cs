@@ -9,6 +9,9 @@
 			Console.WriteLine("5. feladat: A keresztrejtvény mérete");
 			Console.WriteLine($"Sorok száma: {racs.SorokDb}");
 			Console.WriteLine($"Oszlopok száma: {racs.OszlopokDb}");
+
+			Console.WriteLine("6. feladat: A beolvasott keresztrejtvény");
+            racs.Megjelenit();
 		}
     }
 }
