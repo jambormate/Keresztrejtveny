@@ -54,5 +54,31 @@ namespace Keresztrejtveny
 				Console.WriteLine();
 			}
 		}
+		public int LeghosszabbFuggoleges()
+		{
+			int max = 0;
+
+			for (int j = 1; j <= OszlopokDb; j++)
+			{
+				int hossz = 0;
+
+				for (int i = 1; i <= SorokDb; i++)
+				{
+					if (Racs[i, j] == '-')
+					{
+						hossz++;
+						if (hossz > max) 
+						{ 
+							max = hossz;
+						}
+					}
+					else
+					{
+						hossz = 0;
+					}
+				}
+			}
+			return max;
+		}
 	}
 }

@@ -12,6 +12,8 @@
 
 			Console.WriteLine("6. feladat: A beolvasott keresztrejtvény");
             racs.Megjelenit();
+
+			Console.WriteLine($"7. feladat: A leghosszabb függ.: {racs.LeghosszabbFuggoleges()} karakter");
 		}
     }
 }
